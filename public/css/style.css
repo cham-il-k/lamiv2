@@ -1,0 +1,85 @@
+body {
+  padding: 0px;
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.accroche  {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+   
+}
+.leadin {
+    font-family: 'Revalia', cursive;
+    color: #4cff00 !important ;
+    font-size: 2rem !important;
+    padding: 7px ; 
+     margin:3vh auto;
+}
+bold {
+    text-align: center !important;
+     color: darkorange; 
+}
+
+.copy {
+  color: mediumspringgreen !important;
+  text-shadow:1px 1px 3px darkslategrey;
+  text-align: center;
+  font-family: 'Wallpoet', cursive;
+  letter-spacing: -.05em;
+  line-height: .9em;
+  width: auto;
+  padding: 7px auto; 
+  margin:1vh auto;
+ }
+ .action{
+    font-family: 'Helvetica', cursive;
+    color: #4cff00 !important ;
+    font-size: 1rem !important;
+    padding: 3px auto; 
+    margin:1vh auto;
+ }
+ #btnstart {
+    font-size: 2rem;
+     margin:1vh auto;
+
+    padding: 30px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: 1px solid #4cff00;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+} 
