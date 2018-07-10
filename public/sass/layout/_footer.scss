@@ -1,0 +1,103 @@
+.footer {
+    background-color: $color-grey-dark-3;
+    color: $color-grey-light-heading;
+    padding: 10rem 0;
+    font-size:1.4rem;
+    
+    &__logo-box {
+            margin:3rem 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+        &--name {
+            font-family: 'Revalia', cursive;
+            color: $color-green-acid ;
+            font-size: 5rem !important;
+            font-weight: 300;
+            letter-spacing: 2rem;
+            width: 15rem;
+            height: auto;
+            margin-left: -11rem;
+            transition: all .3s;
+            &:hover {
+                box-shadow:6rem 4rem 6rem rgba($color-green-aldi,.5);    
+                transform: scale(1.1);
+                
+            }
+        }
+        &--img > img {
+            width: 7rem;
+            height: auto;
+            margin-bottom: 3rem;
+        }
+    }
+    &__col-1-of-2 {
+        padding-left:3px !important ;
+
+   
+    }
+    &__copyright {
+        margin-top: -1rem;
+        @include respond(portrait) {
+            margin-top: 2rem;
+
+        }
+    }
+    &__navigation {
+       border-top: 1px solid $color-green-aldi;
+       padding-top: 2rem;
+       display: inline-block;
+       @include respond(portrait) {
+        padding-top: 1rem;
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        
+    }
+
+    }
+    &__list {
+        list-style: none;
+    }
+    &__item {
+        display:inline-block;
+        &:not(:last-child){
+            margin-right:2rem;
+        }
+    }
+    &__link {
+        &:link,
+        &:visited {
+            color:$color-grey-light-heading;
+            text-decoration:none;
+            text-transform: uppercase;
+            display: inline-block; 
+            transition: all .3s;
+        }
+        &:hover,
+        &:active {
+            color:$color-green-acid;
+            box-shadow:0 1rem  2rem rgba($color-green-aldi,.5); 
+            transform: scale(1.1);
+
+        }
+    }
+    &__navbar-brand {
+        color:$color-green-acid !important;
+        transition: all .3s;      
+        &:hover {
+            color:$color-green-acid;
+            box-shadow:0 2rem  17rem rgba($color-green-aldi,.5);
+            transform: scale(1.1);
+        }  
+    }
+
+    &__copyright {
+        text-align: center;
+        @include respond(portrait) {
+            width: 100%;
+            text-align: center;
+        }    
+    }
+
+}

@@ -1,0 +1,69 @@
+:root {
+--color-blue-primary: rgb(16, 141, 187);
+--color-blue-eye: #1593a0;
+--color-blue-side: #5c7c8e;
+
+--color-dark-1: #333;
+--color-dark-2: #777;
+--color-dark-3: #999;
+
+--color-light-1: #faf9f9;
+--color-light-2: #f4f2f2;
+--color-light-3: #f0eeee;
+--color-light-4: #faf9f9;
+--color-light-5:rgb(221, 193, 193);
+--color-light-6:#d8abab;
+
+--color-light-6: #ccc;
+
+--color-green-kaki: #356822;
+--color-blue-green: #628465;
+
+--color-green-1: #8eb863;
+--color-green-2: #bfe594;
+
+--color-green-3:rgb(0, 250, 154);
+--color-green-4:rgb(172, 248, 219);
+--color-green-5:rgb(77, 255, 0) ;
+--shadow-dark: 0 -2rem 10rem rgba(0,0,0,.2);
+--default-size: 1.5;
+--line: 1px solid var(--color-light-3);
+}
+//SASS VARIABLES
+$bp-largest: 75em; //1200px / 16 for em 
+$bp-large: 68.75em; //1100px / 16 for em 
+$bp-medium: 56.25em; //900px / 16 for em 
+$bp-small: 37.5em; //600px / 16 for em 
+$bp-smallest: 31.25em; //500px / 16 for em 
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem=10px pour 16  =>10/16px
+    @media only screen and(max-width: $bp-large){
+        font-size: 50%;
+    }
+
+
+}
+
+body {
+    background-image: linear-gradient( to right bottom,var(--color-green-4), var(--color-blue-primary));
+    font-family: $default-font;
+    font-weight: $normal-weight;
+    color: var(--color-dark-2);
+    line-height: 1.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+}

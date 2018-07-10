@@ -1,7 +1,19 @@
+
 {{> head}}
+{{!--
+{{> navbar}}
+ --}}
+{{!-- {{> vdo}} --}}
   <body>
+    {{#if index}}
+      {{> header}}
+    {{/if}}
+
     {{{body}}}
+  
   </body>
-  {{> footer}}
-  {{> scripts}}
+    {{#if index}}
+      {{> footer}}
+    {{/if}}   
+      {{> scripts}}
 </html>

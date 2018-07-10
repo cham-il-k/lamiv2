@@ -1,0 +1,39 @@
+.feature-box {
+    background-color: rgba($color-grey-light-1,0.8);
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius:3px;
+    box-shadow: 0 1.5rem 4rem $color-dark-grey;     
+    transition: all .3s;    
+    @include respond(portrait) {
+        padding: 1rem  2rem;
+        width: 50rem;
+        margin: 0rem auto;    
+    }
+    &__icon {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        height: 50px;
+        display: inline-block;
+        background-image: linear-gradient(to right, $color-blue-left-gradient, $color-blue-right-gradient);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; 
+        @include respond(portrait) {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            
+        }
+    }
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+
+    &__text {
+        margin-top:2rem;
+        font-size:2rem;
+    }
+    
+
+}

@@ -1,0 +1,42 @@
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;   
+    box-sizing: inherit;
+}
+html {
+    //define 1rem cause 1rem=10px and 10/16(font ) = 62.5% 
+    font-size: 62.5%;
+
+    @include respond(landscape) {
+        font-size: 56.25%; //1rem = 9px 9/16 =>
+    };
+    @include respond(portrait) {
+        font-size: 50%; //1rem = 8px 8/16 => 50%
+    };
+    
+    @include respond(large) {
+        font-size: 75%; // 1rem = 12px 12/16 
+    };
+    
+
+}
+body {
+    box-sizing: border-box;
+    padding: 2rem;
+    @include respond(portrait) {
+            padding: 0;
+    };
+    
+    @include respond(large) {
+        padding: 2.5rem; // 1rem = 12px 12/16 
+    };
+
+}
+
+::selection {
+    background-color:$color-primary-subscription;
+    color:$color-grey-light-heading;
+}

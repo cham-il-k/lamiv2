@@ -1,0 +1,216 @@
+.section-subscription__description {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    -ms-perspective: 150rem;
+    -webkit-perspective: 150rem;
+    position: relative;
+    height: 35rem;
+   &--btn {
+       margin-top: -5rem;
+   }
+//Functionality and design    
+    &--side {
+        height: 35rem;
+        width: 100%;    
+        transition: all .8s ease;    
+        color: $darkGrey;
+        font-size: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        box-shadow: 0 1.5rem 4rem $color-shadow; 
+        border-radius: 5px;
+        margin-bottom: -10rem;
+        overflow: hidden;
+        &-front {
+            background-color: $color-green-aldi;
+        }
+        
+        &-back {
+            &-free {
+                background-image: linear-gradient(to right bottom, $color-blue-fix-light, $color-blue-fix-dark);
+                transform: rotateY(180deg);
+                color:$color-blue-left-gradient;
+            }
+            &-family {
+                background-image:linear-gradient(to right bottom, $color-green-kaki, $color-blue-green);
+                transform: rotateY(180deg);
+                color:$color-blue-left-gradient;
+            }
+            &-organisation {
+                background-image: linear-gradient(to right bottom,$color-orange-special-light, $color-orange-special-dark);
+                transform: rotateY(180deg);
+                color:$color-blue-left-gradient;
+            }
+        }
+
+        
+    }//--side
+    &:hover &--side-front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &--side-back-family,
+    &:hover &--side-back-free, 
+    &:hover &--side-back-organisation{
+        transform: rotateY(0deg);
+    }
+
+// Design and frot styling    
+    &--picture {
+        background-size: cover;
+        height: 13rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0 , 100% 0, 100% 90%, 0 100%); 
+        clip-path: polygon(0 0 , 100% 0, 100% 90%, 0 100%); 
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        &--free {
+            background-image: linear-gradient(to right bottom, $color-blue-fix-light, $color-blue-fix-dark),
+                             url("/img/caneva.png");
+        }
+        &--family {
+            background-image: linear-gradient(to right bottom, $color-green-kaki, $color-blue-green),
+                                url("/img/caneva2.png");
+        }
+        &--organisation {
+            background-image: linear-gradient(to right bottom,$color-orange-special-light, $color-orange-special-dark),
+                    url("/img/caneva3.png");
+        }
+    }
+    &--heading {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $color-grey-light-heading;
+        position:absolute;
+        text-transform: uppercase;
+        top: 5rem;
+        right: 1.5rem;
+        text-align: right; 
+        
+    }
+    &--heading {
+        padding: 1rem 1.7rem;
+        -webkit-box-decoration-break:clone;
+        box-decoration-break: clone;
+        &--free {
+            background-image: linear-gradient(to right bottom, rgba($color-blue-fix-light,.4), rgba($color-blue-fix-dark,0.4));
+        }
+        &--family {
+            background-image: linear-gradient(to right bottom, rgba($color-green-kaki,.4), rgba($color-blue-green,.4));
+        }
+        &--organisation {
+            background-image: linear-gradient(to right bottom, rgba($color-orange-special-light, .4), rgba($color-orange-special-dark,.4));
+        }
+    }
+
+    &--details {
+        padding: 2%;
+        ul {
+            list-style: none;
+            width: 95%;
+            margin: 0 auto;
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: .5rem;
+                &:not(:last-child){
+                border-bottom: 1px solid $color-grey-light-heading;
+                } 
+            @include respond(portrait) {
+                font-size:2.5rem;
+            }
+            }
+        }
+    }
+    
+    // back side  cta
+    &__cta {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width:90%;
+        transform: translate(-50%, -50%);       
+    }
+    &__price-box {
+        text-align: center;
+        margin-bottom:3rem;
+        color:$lightWhite;
+    }
+
+    &__price-box--features {
+        font-size: 5rem;
+        font-weight:100;
+        margin-top: 0rem;
+        margin-bottom: 6rem;
+    }
+    &__price-box--price {
+        font-size: 3rem;
+        text-transform: uppercase;
+        line-height: 3rem;
+        font-weight:300;
+
+    }
+
+    //@include respond(portrait)
+    @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
+        &--btn {
+            margin-top: 1rem;
+        }
+         height: auto;
+        &--side {
+            height: auto;
+            position: relative;
+            border-radius: 3px;
+            &-front {
+                margin-bottom: 0rem;
+            }
+            &-back-organisation,
+            &-back-family,
+            &-back-free {
+                transform: rotateY(0deg);
+                height: 16rem;
+                margin-bottom: 2rem;
+                padding: 18rem 0rem 18rem 19rem; 
+            }    
+            &-back-free {
+                margin-top:0rem;
+            }
+            @include respond(phone) {
+                &-back-organisation,
+                &-back-family,
+                &-back-free {
+                    padding:20rem 1rem 18rem 16rem
+                }   
+            }
+        }    
+        &:hover &--side-front {
+            transform: rotateY(0deg);
+        }
+        &:hover &-back-organisation,
+                &-back-family,
+                &-back-free {
+                transform: rotateY(0deg);
+        }
+        
+        &__cta {
+            position: relative;
+            top: 0;
+            left: 0;
+            width:100%;
+            //transform: translate(-50%, -50%);       
+        }
+        &__price-box {
+            margin-bottom:4rem;
+        }
+        &__price-box--features {
+            font-size: 4rem;
+            font-weight:100;
+        }   
+    }
+    
+}
