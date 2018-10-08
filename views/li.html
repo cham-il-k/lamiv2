@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./li.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>li animation </title>
+</head>
+<body>
+    <div>
+            <input class="startBtn" onClick="startGame" type="button" value="Start Game" />
+            Score :<span class="score">0</span>live :<span class="live">0</span>
+    </div>
+    
+    <div id="container"> 
+        <div class="gameOver">START THE GAME</div>   
+        <div class="baddy"></div>
+        <div id="basket" class="basket">
+            <div class="basket1"></div>
+        </div>
+
+    </div>   
+  <script src="./li.js" ></script>
+    
+</body>
+</html>
+<!--
+         var counter = 0;
+        var el = document.getElementById('container');
+        el.addEventListener('click', move);
+        function move(){
+            console.log(counter);
+            counter++;  
+            el.style.left = (counter * 3 ) + 'px';
+            if ( counter < 100 ) {
+                requestAnimationFrame(move);
+                }
+            } 
+        function step(timestamp) {
+            var progress = timestamp - start;
+            cancelAnimationFrame(myReq);
+            }
+   
+-->

@@ -298,37 +298,43 @@
   <div class="row">
     <div class="book">
       <div class="book__form">
-        <form action="#" class="form">
+        <form action="/users" method="POST" class="form" enctype="application/x-www-form-urlencoded">
             <div class=" u-margin-bottom-2">
               <h2 class="section-features-heading-secondary-2">free trial</h2>
             </div>
           <div class="form__group">
             <label for="email" class="form__label">email
-              <input type="email" id='email' class="form__input" placeholder="@mail" required>
+              <input type="email" id='email' name="email" class="form__input" placeholder="@mail" required> 
             </label>
           </div>
           <div class="form__group">
+            <label for="login" class="form__label">login
+              <input type="text" id='login' name="login" class="form__input" placeholder="login" required>
+            </label>
+          </div>
+          
+          <div class="form__group">
             <label for="password" class="form__label">password
-              <input type="password" id='password' class="form__input" placeholder="password 4 ch minimum" required>
+              <input type="password" id='password'  name="password" class="form__input" placeholder="password 4 ch mini" required>
             </label>
           </div>
           <div class="form-group">
             <div class="form__radio-group">
-              <input type="radio" class="form__radio-input" id="free" name="topic">
-              <label for="free" class="form__radio-label" > 
+              <input type="radio" class="form__radio-input" id="fre" value="fre" name="cat" >
+              <label for="fre" class="form__radio-label" > 
                 <span class="form__radio-button"></span>
                 free
               </label>
             </div>
             <div class="form__radio-group">
-              <input type="radio" class="form__radio-input" id="family" name="topic">
-              <label for="family" class="form__radio-label"> 
+              <input type="radio" class="form__radio-input" id="fam" value="fam" name="cat">
+              <label for="fam" class="form__radio-label"> 
                 <span class="form__radio-button"></span>
                 family</label>
             </div>
             <div class="form__radio-group">
-              <input type="radio" class="form__radio-input" id="organisation" name="topic">
-              <label for="organisation" class="form__radio-label">
+              <input type="radio" class="form__radio-input" id="org" value="org" name="cat">
+              <label for="org" class="form__radio-label">
                 <span class="form__radio-button"></span>
                  organisation</label>
             </div>

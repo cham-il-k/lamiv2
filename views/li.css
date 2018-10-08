@@ -1,0 +1,57 @@
+#container {
+    position: relative;
+    height: 85vh;
+    width: 90%;
+    left: 5%;
+    background-color: dimgray;
+    overflow: hidden;
+}
+.score, .live {
+    display: inline   ;
+    font-size: 2rem;
+    margin: 0 1rem
+}
+.gameOver {
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    color: aqua
+}
+.startBtn {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: aquamarine;
+    color:rgb(53, 48, 48);
+}
+.basket {
+    position: absolute;
+    width: 10%;
+    background-color: aquamarine;
+    height: 3rem;
+    bottom: 6rem;
+    left: 2rem; 
+    }
+
+.basket1 {
+    position: absolute;
+    width: 80%;
+    background-color: dimgray;
+    height: 2rem;
+    bottom: 1rem;
+    left: 10%; 
+    }
+
+.baddy {
+    display:none;
+    position: absolute;
+    width: 3rem;
+    background-color: orange;
+    height: 3rem;
+    border-radius: 50%;
+    border: .5rem solid  olivedrab;
+    top: 30%;
+    left: 20%;
+     
+
+}

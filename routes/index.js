@@ -1,15 +1,18 @@
 var express = require('express');
 var router = express.Router();
-
+const Joi = require('joi');
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'laMi1A Company Intelligent habit', index: true });
+  res.render('index', { title: '  lami1a organisation  for  Intelligent habit', index: true });
 });
 
+
 router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'Express' ,index: false});
+  res.render('about', { title: 'lami1a organisation / les premiers 100 ' ,index: true});
 });
-router.get('/dashboard', function(req, res, next) {
-  res.render('dashboard', { title: 'Omia 1 2 3 ', index: false });
+
+router.get('/li', function(req, res, next) {
+  res.render('li', { title: 'li ', dash: true });
 });
+
 module.exports = router;
