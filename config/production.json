@@ -1,0 +1,6 @@
+{
+    "name": "PROD dashboard ",
+    "email" : {
+        "host": "prod-mail-server"
+    }
+}

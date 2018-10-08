@@ -1,0 +1,6 @@
+{
+    "name": "DEV dashboard ",
+    "email" : {
+        "host": "dev-mail-server"
+    }
+}

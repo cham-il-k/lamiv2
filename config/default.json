@@ -1,0 +1,23 @@
+{
+    "name": "li-dashbord",
+    "jwtPrivateKey": "lam-land-token-key",
+    "land": {
+        "config" :{
+            "host": "127.0.0.1",
+            "port": "2000"
+        } 
+    },   
+    "dash": {
+        "config" :{
+            "host": "127.0.0.1",
+            "port": "3000"
+        } 
+    },
+    "mongo" : {
+        "config" : {
+            "host": "127.0.0.1",
+            "port": "27017"
+        }
+    }    
+    
+}

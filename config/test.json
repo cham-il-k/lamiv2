@@ -1,0 +1,5 @@
+{
+    "name": "li-dashbord",
+    "jwtPrivateKey": "lam-land-token-key",
+    "db": "mongodb://localhost:27017/lamia1-land-test"      
+}
