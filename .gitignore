@@ -10,7 +10,7 @@ coverage
 #Dokerfile
 #Docker*
 #config
-config
+#config
 public/sass
 public/dashboard/sass
 
