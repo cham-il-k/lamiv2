@@ -6,8 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 #Coverage directory 
 coverage
-
-_Doker*
+*.yaml
+_Dock*
 _dock*
 _lam*
 _nginx*
