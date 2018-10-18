@@ -1,0 +1,27 @@
+db:
+  image: mongo
+  ports:
+    - "27017:27017"
+  
+nginx:
+  image: nginx
+  
+landpage:
+  image: lami1a/land
+  ports:
+    - "2000:2000"
+  environment:
+    NODE_ENV: "production"
+    mongoUri: "mongodb://db"
+  links:
+    - db
+
+landpage2:
+  image: lami1a/land
+  ports:
+    - "2001:2000"
+  environment:
+    NODE_ENV: "production"
+  links:
+    - db
+  env_file: .env

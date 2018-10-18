@@ -17,7 +17,7 @@ const helmet = require('helmet');
 const config =  require('config');
 const debug = require('debug')('app:startup');
 const mongoose = require('mongoose');
-var dbConnection = mongoose.connect('mongodb://localhost:27017/users')
+var dbConnection = mongoose.connect(config.get('mongo.host')+'/users', { useNewUrlParser: true } )
     .then(() => console.log('connected to database'))
     .catch((err) => console.log(`can t connect to database for  ${err}`));
 // view engine setup

@@ -1,0 +1,16 @@
+upstream land {
+	server localhost:2000;
+	server localhost:2001;
+	zone backend 64k;
+}
+server {
+
+	listen 80;
+	server_name land.lami1a.org;
+
+	location / {
+		proxy_pass http://land;
+		health_check intarvall=10 fails=3 passes=2;
+	}
+
+}

@@ -7,8 +7,14 @@ yarn-error.log*
 #Coverage directory 
 coverage
 
-#Dokerfile
-#Docker*
+_Doker*
+_lam*
+_nginx*
+/srv
+/start*
+/test*
+/services
+
 #config
 #config
 public/sass
