@@ -8,6 +8,7 @@ yarn-error.log*
 coverage
 
 _Doker*
+_dock*
 _lam*
 _nginx*
 srv/
