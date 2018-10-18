@@ -10,10 +10,10 @@ coverage
 _Doker*
 _lam*
 _nginx*
-/srv
-/start*
-/test*
-/services
+srv/
+startup/
+tests/
+services/
 
 #config
 #config
