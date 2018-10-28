@@ -29,7 +29,7 @@ router.post('/', async (req, res) => {
     */  
    req.user = (_.pick(user, ['_id', 'login', 'email']));
     res.header('x-auth-token', token).redirect('/dashboard');
-
+    console.log(req.user);
   });
 
   router.put('/:id', async (req, res) => {

@@ -12,7 +12,11 @@ router.get('/about', function(req, res, next) {
 });
 
 router.get('/li', function(req, res, next) {
-  res.render('li', { title: 'li ', dash: true });
+  res.render('li', { title: 'li ', ab: true });
+});
+
+router.get('/ab', function(req, res, next) {
+  res.render('ab', { title: 'ab- title rain  car ', ab: true });
 });
 
 module.exports = router;
