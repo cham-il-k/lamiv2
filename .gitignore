@@ -15,6 +15,7 @@ srv/
 startup/
 tests/
 services/
+package-lock.json
 
 #config
 #config

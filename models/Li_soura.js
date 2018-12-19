@@ -7,5 +7,5 @@ const souraSchema = new Schema({
             juz : Number
     })
 
-const Soura = mongoose.model('soura', souraSchema);
+const Soura = mongoose.model('Soura', souraSchema);
 module.exports = Soura;

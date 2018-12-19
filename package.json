@@ -46,7 +46,7 @@
     "concat": "^1.0.3",
     "debug": "^2.6.9",
     "jest": "^23.6.0",
-    "node-sass": "^4.9.3",
-    "postcss-cli": "^5.0.1"
+    "node-sass": "^4.10.0",
+    "postcss-cli": "^6.0.1"
   }
 }
