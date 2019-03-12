@@ -5,7 +5,6 @@
   "scripts": {
     "test": "jest --watchAll --verbose --coverage",
     "start": "node ./bin/www",
-    "start:devc": "DEBUG=app:* nodemon ./bin/www",
     "exe": "nodemon ./bin/exe",
     "watch:sass": "node_modules/node-sass/bin/node-sass public/sass/main.scss public/css/style.css -w",
     "start:dev": "npm-run-all --parallel start watch:sass",
@@ -13,15 +12,8 @@
     "concat:css": "node_modules/.bin/concat -o  public/css/style.concat.css public/css/icon-font.css public/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 version' public/css/style.concat.css -o public/css/style.prefix.css",
     "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass  concat:css  prefix:css  compress:css",
-    "dash-watch:sass": "node_modules/node-sass/bin/node-sass public/dashboard/sass/main.scss public/dashboard/css/style.css -w",
-    "dash-start:dev": "npm-run-all --parallel start dash-watch:sass",
-    "dash-compile:sass": "node_modules/node-sass/bin/node-sass public/dashboard/sass/main.scss public/dashboard/css/style.comp.css",
-    "dash-concat:css": "node_modules/.bin/concat -o  public/dashboard/css/style.concat.css  public/dashboard/css/style.comp.css",
-    "dash-prefix:css": "postcss --use autoprefixer -b 'last 10 version' public/dashboard/css/style.concat.css -o public/dashboard/css/style.prefix.css",
-    "dash-compress:css": "node-sass public/dashboard/css/style.prefix.css public/dashboard/css/style.css --output-style compressed",
-    "dash-build:css": "npm-run-all dash-compile:sass  dash-concat:css  dash-prefix:css  dash-compress:css"
-  },
+    "build:css": "npm-run-all compile:sass  concat:css  prefix:css  compress:css"
+     },
   "dependencies": {
     "bcrypt": "^3.0.1",
     "config": "^2.0.1",
