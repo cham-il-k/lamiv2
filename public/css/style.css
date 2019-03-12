@@ -501,8 +501,8 @@ body {
   .heading-primary--sub {
     font-family: 'Voltaire', sans-serif;
     display: block;
-    font-size: 1.3rem;
-    line-height: 5rem;
+    font-size: 1.5rem;
+    line-height: 6rem;
     margin-top: 3rem;
     font-weight: 300;
     letter-spacing: 1rem;
@@ -1016,7 +1016,8 @@ body {
   background-size: cover;
   background-position: top;
   transform: skewY(-7deg);
-  margin-top: -15rem;
+  margin-top: -10rem;
+  margin-bottom: 10rem;
   z-index: 10; }
   .section-features > * {
     transform: skewY(7deg); }

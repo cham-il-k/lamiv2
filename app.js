@@ -7,15 +7,12 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const dashboardRouter = require('./routes/dashboard');
-const tabletRouter = require('./routes/tablet');
+
 const authRouter = require('./routes/auth');
-const genreRouter = require('./routes/genres');
 const  hbs = require('express-handlebars');
 const app = express();
 const helmet = require('helmet');
 const config =  require('config');
-const debug = require('debug')('app:startup');
 const mongoose = require('mongoose');
 var dbConnection = mongoose.connect(config.get('mongo.host')+'/lami1a-li', { useNewUrlParser: true } )
     .then(() => console.log('connected to database'))

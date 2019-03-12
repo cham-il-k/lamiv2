@@ -11,10 +11,10 @@ _Dock*
 _dock*
 _lam*
 _nginx*
-srv/
-startup/
+srv
+startup
 tests/
-services/
+services
 package-lock.json
 
 #config
