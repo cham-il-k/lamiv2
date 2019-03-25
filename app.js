@@ -33,6 +33,8 @@ if(app.get('env') === 'development') {
 console.log(app.get('env')); 
 app.use(logger('dev'));
 } 
+console.log(app.get('env')); 
+
 app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
