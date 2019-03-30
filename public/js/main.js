@@ -1,14 +1,4 @@
 $(document).ready(() => {
-
+    let t = 0;
+    setInterval(()=> console.log(`dans la boucle setTimeout de main.js ${t}`),1000);
 });
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-function myFunction() {
-    if (video.paused) {
-        video.play();
-        btn.innerHTML = "Pause";
-    } else {
-        video.pause();
-        btn.innerHTML = "Play";
-    }
-}
