@@ -1,6 +1,0 @@
-{
-       "jwtPrivateKey": "lam-land-token-key", 
-        "mail": {
-            "password": "app_password"
-        }
-}
