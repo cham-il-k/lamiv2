@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "test": "jest --watchAll --verbose --coverage",
-    "start": "NODE_ENV=production node  ./bin/www",
+    "start": "NODE_ENV=production node  ./bin/www --open ",
     "exe": "nodemon ./bin/exe",
     "watch:sass": "node_modules/node-sass/bin/node-sass public/sass/main.scss public/css/style.css -w",
     "start:dev": "npm-run-all --parallel start watch:sass",
@@ -15,6 +15,7 @@
     "build:css": "npm-run-all compile:sass  concat:css  prefix:css  compress:css"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "bcrypt": "^3.0.1",
     "config": "^2.0.1",
     "cookie-parser": "~1.4.3",
@@ -34,11 +35,19 @@
     "winston": "^3.1.0"
   },
   "devDependencies": {
+    "@babel/node": "^7.x",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^8.6.5",
+    "babel-loader": "^8.0.5",
     "concat": "^1.0.3",
     "debug": "^2.6.9",
     "jest": "^23.6.0",
     "node-sass": "^4.10.0",
-    "postcss-cli": "^6.0.1"
+    "postcss-cli": "^6.0.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   }
 }
