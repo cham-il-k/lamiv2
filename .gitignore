@@ -17,7 +17,7 @@ tests/
 services
 package-lock.json
 
-#config
+config
 #config
 public/sass
 public/dashboard/sass
